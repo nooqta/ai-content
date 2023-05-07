@@ -1,8 +1,8 @@
 
-## AI-CONTENT a Next.js Blog Generator
+# AI-CONTENT
 AI-Content is a AI-Powered Next.js Blog Generator and easy-to-use solution for creating dynamic, high-quality blog content using cutting-edge artificial intelligence technology. This project combines the flexibility and performance of the Next.js framework with advanced language models to provide users with an innovative way to generate blog articles tailored to their specific needs.
 
-### Features:
+## Features:
 AI-driven content generation: Leverage the power of advanced language models to create engaging, relevant, and informative blog articles on a wide range of subjects.
 
 - Next.js blog template: A modern, responsive, and SEO-friendly blog template built using the Next.js framework, allowing for fast and scalable content delivery.
@@ -11,12 +11,12 @@ AI-driven content generation: Leverage the power of advanced language models to 
 
 - Predefined or custom content generation: Choose between selling the blog with a set number of AI-generated articles or providing customers with the AI script for generating their own content.
 
-### Usage:
+## Usage:
 This project is perfect for bloggers, content creators, digital marketers, and businesses looking for an innovative solution to generate high-quality blog content. By harnessing the power of AI and the Next.js framework, users can quickly and easily populate their blogs with engaging, relevant, and informative content, tailored to their unique audience and requirements.
 
-### Getting Started
+## Getting Started
 Follow the steps below to get started with the AI-Powered Next.js Blog Generator:
-#### Prerequisites:
+### Prerequisites:
 - Node.js (v12 or higher) installed on your local machine
 
 - pnpm the Fast, disk space efficient package manage
@@ -27,12 +27,12 @@ Follow the steps below to get started with the AI-Powered Next.js Blog Generator
 
  To use Unsplash for generating cover images for your articles, you'll need to get an API key.
 
-#### Step 1: Clone the repository
+### Step 1: Clone the repository
 Clone the AI-Content repository to your local machine by running the following command in your terminal or command prompt:
 ```
 git clone https://github.com/nooqta/ai-content.git
 ```
-#### Step 2: Install dependencies
+### Step 2: Install dependencies
 Navigate to the project folder and install the necessary dependencies by running the following commands:
 ```
 cd ai-content
