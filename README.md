@@ -118,7 +118,7 @@ We would like to express our gratitude to these organizations and projects for t
 
 ##   Contributing
 
-We welcome contributions from the community to help improve and expand this project. If you're interested in contributing, please refer to the [CONTRIBUTION.md](https://chat.openai.com/c/CONTRIBUTION.md) file for guidelines on how to get started, including information on:
+We welcome contributions from the community to help improve and expand this project. If you're interested in contributing, please refer to the [CONTRIBUTION.md](CONTRIBUTION.md) file for guidelines on how to get started, including information on:
 
 -   Reporting bugs and submitting feature requests
 -   Setting up your development environment
@@ -131,7 +131,7 @@ Together, we can make this project even better and more useful for everyone. Tha
 
 This project is licensed under the MIT License. The MIT License is a permissive free software license, which means you have the freedom to use, modify, distribute, and even sell the software, as long as you provide attribution back to the original author.
 
-For more information on the terms and conditions of the MIT License, please see the [LICENSE](https://chat.openai.com/c/LICENSE) file in the project repository or visit [https://opensource.org/licenses/MIT](https://opensource.org/licenses/MIT).
+For more information on the terms and conditions of the MIT License, please see the [LICENSE](LICENSE) file in the project repository or visit [https://opensource.org/licenses/MIT](https://opensource.org/licenses/MIT).
 
 ##   Sponsoring
 
