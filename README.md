@@ -112,8 +112,8 @@ This project was made possible thanks to the invaluable contributions and tools 
 -   **[MDX](https://mdxjs.com/)**: For allowing the seamless integration of React components, HTML, and Markdown in a single file.
 -   **[Tailwind](https://tailwindcss.com/)**: An utility-first CSS framework that enables rapid building of beautiful and responsive designs.
 -   **[Langchain](https://docs.langchain.com/docs/)**: For their support in helping build a project powered by advanced language models.
--   **[llElevenLabs](https://beta.elevenlabs.io/speech-synthesis)**: For simplifying the process generating speech audio from text (TTS)
-
+-   **[llElevenLabs](https://beta.elevenlabs.io/speech-synthesis)**: For simplifying the process generating speech audio from text (TTS).
+-   **[Unsplash](https://unsplash.com/)**: For providing the beautiful cover images of the articles.
 We would like to express our gratitude to these organizations and projects for their significant contributions to the development and success of this project.
 
 ##   Contributing
