@@ -1,3 +1,18 @@
 {
-    "domain": "React Essentials"
+    "domain": "Python Programming",
+    "tone": "Passionate and Urgent",
+    "length": "Long",
+    "numArticles": 10,
+    "topics": [
+        "Introduction to Python",
+        "Python Data Types and Variables",
+        "Python Control Structures",
+        "Python Functions",
+        "Python Modules and Packages",
+        "Python Object-Oriented Programming",
+        "Python Exception Handling",
+        "Python File I/O",
+        "Python Libraries and Frameworks",
+        "Python Project Best Practices"
+    ]
 }

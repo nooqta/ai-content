@@ -54,13 +54,13 @@ async function generateCoverImageUrl(keyword, accessKey) {
     return data.urls.regular;
   }
 
-async function generateTitle(domain) {
-  const prompt = `Generate a blog article title for the domain: ${domain}. Don't use the following characters: ":;{}[]()<>\/"`;
+async function generateDescription(subject) {
+  const prompt = `Generate an article short description for the subject ${subject} . Max allowed number of words is 40. Don't use the following characters: ":;{}[]()<>\/"`;
   const response = await openai.createCompletion({
     model: "text-davinci-003",
     max_tokens: 64,
     prompt,
-    temperature: 0.8
+    temperature: 0.3
   });
 
   return response.data.choices[0].text.trim();
@@ -116,16 +116,17 @@ async function generateArticle(properties) {
   return response.data.choices[0].text.trim();
 }
 
-async function saveArticle(title, subject, content) {
+async function saveArticle(title, description, content) {
   const slug = slugify(title, { lower: true, strict: true });
-  const fileName = `content/posts/${slug}.mdx`;
+  // @todo: retrieve path and extension from settings.json
+  let fileName = `content/posts/${slug}.mdx`;
 
   const currentDate = new Date().toISOString().slice(0, 10);
 
   const articleContent = `---
 title: ${title}
 date: "${currentDate}"
-description: ${subject}
+description: ${description}
 ---
 ${content}`;
 
@@ -136,20 +137,24 @@ ${content}`;
 (async () => {
   await readSubjectsFromFiles();
 
-  const numArticles = parseInt(properties.numArticles);
-
+  const domain = properties.domain;
+  let subject = await generateUniqueSubject(domain);
+  let numArticles = parseInt(properties.numArticles);
+  if(properties.topics &&  properties.topics.length > 0) {
+      numArticles = properties.topics.length;
+  }
   for (let i = 0; i < numArticles; i++) {
-    const domain = properties.domain;
-    const title = await generateTitle(domain);
-    console.log("Generated Title:", title);
-
-    const subject = await generateUniqueSubject(domain);
-    console.log("Generated Unique Subject:", subject);
+    if(properties.topics &&  typeof properties.topics[i] !== 'undefined') {
+      subject = properties.topics[i];
+    }
+    console.log("Generated Subject:", subject);
     properties.topic = subject;
+    let description = await generateDescription(subject);
+    console.log("Generated Description:", description);
     const imgUrl = await generateCoverImageUrl(subject, process.env.UNSPLASH_ACCESS_KEY);
     properties.imgUrl = imgUrl;
     const article = await generateArticle(properties);
 
-    saveArticle(title, subject, article);
+    saveArticle(subject, description, article);
   }
 })();

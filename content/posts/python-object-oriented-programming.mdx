@@ -1,0 +1,98 @@
+---
+title: Python Object-Oriented Programming
+date: "2023-05-14"
+description: Learn the fundamentals of Python Object-Oriented Programming: classes, objects, methods, inheritance and more.
+---
+# Python Object-Oriented Programming 
+![Photo by Jens Johnsson on Unsplash](https://images.unsplash.com/photo-1531030874896-fdef6826f2f7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxNTY3OTN8MHwxfHJhbmRvbXx8fHx8fHx8fDE2ODQwNTg3MTN8&ixlib=rb-4.0.3&q=80&w=1080)
+
+Python is a popular programming language that is used in many fields, such as web development, machine learning, and data science. It is also well-known for its object-oriented programming capabilities. Object-oriented programming (OOP) is a programming paradigm that focuses on the creation and manipulation of objects. It is a powerful tool for developers to use when building complex applications. In this article, we will explore Python's object-oriented programming features and how they can be used to create better, more efficient applications.
+
+## What is Object-Oriented Programming?
+
+Object-oriented programming is a programming paradigm which focuses on the use of objects. Objects are pieces of data that contain both attributes and methods. Attributes are characteristics of the object, such as its color or size, while methods are functions that can be performed on the object, such as printing its attributes or changing them. OOP allows developers to create complex applications by creating objects with specific attributes and methods that can interact with each other.
+
+## How Does Python Support Object-Oriented Programming?
+
+Python is a great language for object-oriented programming. It supports all the major features of OOP, such as classes, objects, inheritance, and polymorphism. Python also provides a number of built-in features to make object-oriented programming easier, such as interfaces, abstract classes, and operator overloading. 
+
+## Classes 
+
+In Python, classes are used to define objects. A class is a template for an object, and it contains attributes and methods that can be used to manipulate the object. Classes can be used to create objects of the same type. For example, a class can be used to define a "Person" object, and each person object can have different attributes, such as name and age. 
+
+Below is an example of a class that defines a "Person" object.
+
+```python
+class Person:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+
+    def get_name(self):
+        return self.name
+
+    def get_age(self):
+        return self.age
+```
+
+In this example, the class "Person" contains the attributes "name" and "age". It also contains two methods, "get_name" and "get_age", which can be used to get the value of the attributes. 
+
+## Objects
+
+Objects are instances of classes. They can be created using the class template and can be used to manipulate data. In the example above, we can create a "Person" object using the "Person" class.
+
+```python
+p1 = Person("John", 25)
+p2 = Person("Jane", 22)
+```
+
+Here, we have created two objects, "p1" and "p2". We can access their attributes and methods using the dot operator. For example, we can get the name of the person using the "get_name" method:
+
+```python
+p1.get_name() # returns "John"
+p2.get_name() # returns "Jane"
+```
+
+## Inheritance
+
+Inheritance is a powerful feature of object-oriented programming. It allows classes to inherit attributes and methods from parent classes. This allows developers to create classes that have the same or similar features as other classes. 
+
+In the example below, we have defined a "Student" class that inherits from the "Person" class.
+
+```python
+class Student(Person):
+    def __init__(self, name, age, major):
+        super().__init__(name, age)
+        self.major = major
+
+    def get_major(self):
+        return self.major
+```
+
+The "Student" class inherits all the attributes and methods from the "Person" class, such as "name" and "get_name". It also has its own attribute, "major", and its own method, "get_major". 
+
+## Polymorphism
+
+Polymorphism is another powerful feature of object-oriented programming. It allows objects of different classes to be treated the same way. This allows developers to create code that can handle objects of different classes without having to write separate code for each class. 
+
+In the example below, we have defined two classes, "Person" and "Student". We can create objects of both classes and use them in the same way. 
+
+```python
+p1 = Person("John", 25)
+s1 = Student("Jane", 22, "Computer Science")
+
+people = [p1, s1]
+
+for person in people:
+    print(person.get_name())
+```
+
+This code will print the name of both the person and the student. This is because both classes have a "get_name" method, which allows them to be treated the same way. 
+
+## Conclusion
+
+Python is a powerful language for object-oriented programming. It supports all the major features of OOP, such as classes, objects, inheritance, and polymorphism. Python also provides a number of built-in features to make object-oriented programming easier, such as interfaces, abstract classes, and operator overloading. By leveraging these features, developers can create more efficient and powerful applications. 
+
+Official References to Python Object-Oriented Programming: 
+- [Python Documentation](https://docs.python.org/3/tutorial/classes.html)
+- [Real Python Object-Oriented Programming Tutorial](https://realpython.com/python3-object-oriented-programming/)

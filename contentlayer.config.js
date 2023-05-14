@@ -37,6 +37,9 @@ export const Post = defineDocumentType(() => ({
       type: "string",
       required: true,
     },
+    domain: {
+      type: "string",
+    },
     description: {
       type: "string",
     },
