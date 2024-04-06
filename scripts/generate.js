@@ -5,11 +5,13 @@ const fs = require("fs");
 const slugify = require("slugify");
 // @todo: use langchain: this will be a game changer
 
+// Load the API key from the .env file
+dotenv.config();
+
 const configuration = new Configuration({
     apiKey: process.env.OPENAI_API_KEY,
   });
-// Load the API key from the .env file
-dotenv.config();
+
 
 const openai = new OpenAIApi(configuration);
 
